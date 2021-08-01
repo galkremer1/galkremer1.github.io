@@ -221,6 +221,7 @@ export default class DashwareHelper extends Component {
           ),
           fileInfo,
         });
+        this.toggleModal();
       }
     );
   }
@@ -244,7 +245,7 @@ export default class DashwareHelper extends Component {
     return (
       <div className="container" style={{ textAlign: "center" }}>
         <h3>Dashware Helper</h3>
-        <a href="https://youtu.be/faf6OtoYR2E" target="_blank">
+        <a href="https://youtu.be/T52QpFsYNMs" target="_blank">
           <h4>Need Help?</h4>
         </a>
         <Grid padded style={{ width: "100%" }}>
