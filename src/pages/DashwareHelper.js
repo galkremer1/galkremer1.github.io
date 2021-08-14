@@ -182,7 +182,9 @@ export default class DashwareHelper extends Component {
         const timeDiff =
           Math.round(this.calculateTimeDiff(element[j], data[i - 1][j])) / 1000;
         if (previousTimeDiff && 3 * previousTimeDiff < timeDiff) {
-          splittedIndexes.push(i);
+          if (previousTimeDiff >= 1 && timeDiff >= 1) {
+            splittedIndexes.push(i);
+          }
         }
         previousTimeDiff = timeDiff;
       }
