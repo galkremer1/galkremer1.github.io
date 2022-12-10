@@ -68,7 +68,7 @@ export default class SupportModal extends Component {
               <ListItem
                 button
                 onClick={() =>
-                  window.open("https://www.patreon.com/GalKremer", "_blank")
+                  window.open("https://www.patreon.com/kremerFPV", "_blank")
                 }
               >
                 <ListItemIcon>
@@ -77,21 +77,6 @@ export default class SupportModal extends Component {
                 <ListItemText primary="Support Me On Patreon" />
                 <ListItemIcon>
                   <img alt="Patreon" className="modalIcons" src={Patreon} />
-                </ListItemIcon>
-              </ListItem>
-
-              <ListItem
-                button
-                onClick={() =>
-                  window.open("https://paypal.me/galKremer", "_blank")
-                }
-              >
-                <ListItemIcon>
-                  <img alt="Beer" className="modalIcons" src={Beer} />
-                </ListItemIcon>
-                <ListItemText primary="Buy me a coffee (or a beer) ;-)" />
-                <ListItemIcon>
-                  <img alt="Paypal" className="modalIcons" src={Paypal} />
                 </ListItemIcon>
               </ListItem>
               <ListItem
