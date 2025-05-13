@@ -11,7 +11,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -19,13 +19,18 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install and Build
-        run: |
-          npm ci
-          npm run build
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Deploy 🚀
+      - name: Build
+        run: npm run build
+
+      - name: Create .nojekyll file
+        run: touch out/.nojekyll
+
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
           branch: gh-pages
+          clean: true
