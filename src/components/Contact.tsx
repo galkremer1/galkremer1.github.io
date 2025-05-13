@@ -1,5 +1,8 @@
 import React from 'react';
 
+const emailAddress = 'test@example.com';
+
+
 const Contact: React.FC = () => {
   return (
     <section id="contact">
@@ -10,12 +13,12 @@ const Contact: React.FC = () => {
           connect with me on social media!
         </p>
         <ul>
-          <li>
+          {/* <li>
             Email:{' '}
-            <a href="mailto:galkremer1@gmail.com" className="text-blue-500">
-              galkremer1@gmail.com
+            <a href={`mailto:${emailAddress}`} className="text-blue-500">
+              {emailAddress}
             </a>
-          </li>
+          </li> */}
           <li>
             LinkedIn:{' '}
             <a
