@@ -47,7 +47,7 @@ A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.
    npm run dev
    ```
 
-5. Open [http://localhost:3001](http://localhost:3001) in your browser
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Project Structure
 
