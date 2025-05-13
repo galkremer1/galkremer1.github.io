@@ -4,12 +4,12 @@
   "description": "A personal portfolio showcasing skills, projects, and contact information.",
   "main": "src/app/page.tsx",
   "scripts": {
-    "dev": "NODE_ENV=development next dev -p 3001",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 3001",
+    "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
+    "deploy": "rm -rf node_modules/.cache && next build && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "keywords": [
     "portfolio",
