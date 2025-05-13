@@ -40,26 +40,40 @@ personal-portfolio
 To get started with this project, follow these steps:
 
 1. Clone the repository:
+
    ```
    git clone <repository-url>
    ```
 
 2. Navigate to the project directory:
+
    ```
    cd personal-portfolio
    ```
 
 3. Install the dependencies:
+
    ```
    npm install
    ```
 
 4. Run the development server:
+
    ```
    npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:3000` to view the portfolio.
+5. Open your browser and visit `http://localhost:3001` to view the portfolio.
+
+## Deployment
+
+The portfolio is deployed using GitHub Pages and can be accessed at [https://galkremer1.github.io](https://galkremer1.github.io)
+
+To deploy manually:
+
+```bash
+npm run deploy
+```
 
 ## License
 
