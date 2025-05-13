@@ -2,79 +2,92 @@
 
 # Personal Portfolio
 
-This is a personal portfolio project built with Next.js and React. It showcases my skills, projects, and background as a frontend developer.
+A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Features
 
-- **Responsive Design**: The portfolio is designed to be responsive and accessible on various devices.
-- **Dynamic Content**: Utilizes React components to render dynamic content for skills, projects, and personal information.
-- **TypeScript Support**: The project is built with TypeScript for type safety and improved developer experience.
-
-## Project Structure
-
-```
-personal-portfolio
-├── src
-│   ├── app
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   ├── components
-│   │   ├── Header.tsx
-│   │   ├── About.tsx
-│   │   ├── Skills.tsx
-│   │   ├── Projects.tsx
-│   │   ├── Contact.tsx
-│   │   └── Footer.tsx
-│   ├── styles
-│   │   └── globals.css
-│   └── types
-│       └── index.ts
-├── public
-├── package.json
-├── next.config.js
-└── tsconfig.json
-```
+- ⚡️ Next.js 13 with App Router
+- 🔥 TypeScript
+- 💨 Tailwind CSS
+- 📱 Responsive design
+- 🎨 Custom color scheme
+- 🚀 Fast page loads
+- 📦 Component-based architecture
 
 ## Getting Started
 
-To get started with this project, follow these steps:
+### Prerequisites
+
+- Node.js 18.x or later
+- npm 9.x or later
+
+### Installation
 
 1. Clone the repository:
 
-   ```
-   git clone <repository-url>
+   ```bash
+   git clone https://github.com/galkremer1/personal-portfolio.git
    ```
 
 2. Navigate to the project directory:
 
-   ```
+   ```bash
    cd personal-portfolio
    ```
 
-3. Install the dependencies:
+3. Install dependencies:
 
-   ```
+   ```bash
    npm install
    ```
 
-4. Run the development server:
+4. Start the development server:
 
-   ```
+   ```bash
    npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:3001` to view the portfolio.
+5. Open [http://localhost:3001](http://localhost:3001) in your browser
+
+## Project Structure
+
+```
+personal-portfolio/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Header.tsx
+│   │   └── Skills.tsx
+│   └── styles/
+│       └── globals.css
+├── public/
+│   └── images/
+│       └── gal.png
+├── tailwind.config.js
+└── package.json
+```
 
 ## Deployment
 
-The portfolio is deployed using GitHub Pages and can be accessed at [https://galkremer1.github.io](https://galkremer1.github.io)
+This site is deployed on GitHub Pages. Visit [https://galkremer1.github.io](https://galkremer1.github.io)
 
-To deploy manually:
+### Deploy Manually
 
 ```bash
 npm run deploy
 ```
 
+## Built With
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
 ## License
 
-This project is licensed under the MIT License.# galkremer1.github.io
+This project is licensed under the MIT License
