@@ -20,6 +20,7 @@ const Header: React.FC = () => {
             width={40}
             height={40}
             className="rounded-full"
+            priority={false}
           />
         </div>
         <ul className="flex gap-8 list-none m-0 p-0 items-center">

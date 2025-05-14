@@ -1,37 +1,18 @@
 import React, { FC } from 'react';
-import {
-  DiReact,
-  DiJavascript1,
-  DiHtml5,
-  DiCss3,
-  DiSass,
-  DiNodejs,
-  DiGit,
-  DiGithub,
-} from 'react-icons/di';
-import {
-  SiTypescript,
-  SiRedux,
-  SiJest,
-  SiTailwindcss,
-  SiNextdotjs,
-  SiLess,
-  SiElectron,
-  SiFigma,
-  SiInvision,
-} from 'react-icons/si';
+
+import { SkillIcon } from 'react-skills-icons';
 
 import { IconType } from 'react-icons';
 
-const skills: { name: string; icon: IconType }[] = [
-  { name: 'React', icon: DiReact },
-  { name: 'JavaScript', icon: DiJavascript1 },
-  { name: 'TypeScript', icon: SiTypescript },
-  { name: 'HTML5', icon: DiHtml5 },
-  { name: 'CSS3', icon: DiCss3 },
-  { name: 'SASS', icon: DiSass },
-  { name: 'Next.js', icon: SiNextdotjs },
-  { name: 'Redux', icon: SiRedux },
+const skills: { name: string; icon?: IconType }[] = [
+  { name: 'React' },
+  { name: 'JavaScript' },
+  { name: 'TypeScript' },
+  { name: 'HTML5' },
+  { name: 'CSS3' },
+  { name: 'SASS' },
+  { name: 'Next.js' },
+  { name: 'Redux' },
   {
     name: 'Playwright',
     icon: () => (
@@ -42,15 +23,15 @@ const skills: { name: string; icon: IconType }[] = [
       />
     ),
   },
-  { name: 'Node.js', icon: DiNodejs },
-  { name: 'GitHub', icon: DiGithub },
-  { name: 'Git', icon: DiGit },
-  { name: 'Jest', icon: SiJest },
-  { name: 'Less', icon: SiLess },
-  { name: 'Tailwind CSS', icon: SiTailwindcss },
-  { name: 'Electron', icon: SiElectron },
-  { name: 'Figma', icon: SiFigma },
-  { name: 'Invision', icon: SiInvision },
+  { name: 'Nodejs' },
+  { name: 'GitHub' },
+  { name: 'Git' },
+  { name: 'Jest' },
+  { name: 'Less' },
+  { name: 'TailwindCSS' },
+  { name: 'Electron' },
+  { name: 'Figma' },
+  { name: 'Invision' },
 ];
 
 const Skills: React.FC = () => {
@@ -58,19 +39,14 @@ const Skills: React.FC = () => {
     <section id="skills">
       <h1 className="text-4xl font-bold text-center mb-6">Skills</h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 align-items-center justify-items-center mt-8">
-        {skills.map((skill) => {
-          const Icon = skill.icon as FC<{ size?: string | number }>;
-          return (
-            <div
-              key={skill.name}
-              className="flex flex-col items-center"
-              title={skill.name}
-            >
-              <Icon size={30} />
-              <span className="text-lg font-medium mt-2">{skill.name}</span>
-            </div>
-          );
-        })}
+        {skills.map((skill) => (
+          <SkillIcon
+            key={skill.name}
+            customIcon={skill.icon}
+            skill={skill.name}
+            size={32}
+          />
+        ))}
       </div>
     </section>
   );
