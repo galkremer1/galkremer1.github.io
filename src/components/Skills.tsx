@@ -47,7 +47,8 @@ const Skills: React.FC = () => {
             key={skill.name}
             customIcon={skill.icon}
             skill={skill.name as SkillIconProps['skill']}
-            size={32}
+            className="hover:shadow-xl/20 w-34 rounded-xl !block align-items-center justify-items-center hover:scale-120 transition-transform duration-400 cursor-pointer"
+            size={34}
           />
         ))}
       </div>
