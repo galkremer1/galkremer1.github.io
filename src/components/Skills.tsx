@@ -1,20 +1,23 @@
 import React, { FC } from 'react';
 
-import { SkillIcon } from 'react-skills-icons';
+import { SkillIcon, SkillIconProps } from 'react-skills-icons';
 
 import { IconType } from 'react-icons';
 
-const skills: { name: string; icon?: IconType }[] = [
-  { name: 'React' },
-  { name: 'JavaScript' },
-  { name: 'TypeScript' },
-  { name: 'HTML5' },
-  { name: 'CSS3' },
-  { name: 'SASS' },
-  { name: 'Next.js' },
-  { name: 'Redux' },
+const skills: (
+  | { name: SkillIconProps['skill']; icon?: undefined }
+  | { name: string; icon: IconType }
+)[] = [
+  { name: 'react' },
+  { name: 'javascript' },
+  { name: 'typescript' },
+  { name: 'html' },
+  { name: 'css3-full' },
+  { name: 'sass' },
+  { name: 'next' },
+  { name: 'redux' },
   {
-    name: 'Playwright',
+    name: 'playwright',
     icon: () => (
       <img
         src="/icons/playwright-logo.svg"
@@ -23,15 +26,15 @@ const skills: { name: string; icon?: IconType }[] = [
       />
     ),
   },
-  { name: 'Nodejs' },
-  { name: 'GitHub' },
-  { name: 'Git' },
-  { name: 'Jest' },
-  { name: 'Less' },
-  { name: 'TailwindCSS' },
-  { name: 'Electron' },
-  { name: 'Figma' },
-  { name: 'Invision' },
+  { name: 'nodejs' },
+  { name: 'github' },
+  { name: 'git' },
+  { name: 'jest' },
+  { name: 'less' },
+  { name: 'tailwind' },
+  { name: 'electron' },
+  { name: 'figma' },
+  { name: 'invision' },
 ];
 
 const Skills: React.FC = () => {
@@ -43,7 +46,7 @@ const Skills: React.FC = () => {
           <SkillIcon
             key={skill.name}
             customIcon={skill.icon}
-            skill={skill.name}
+            skill={skill.name as SkillIconProps['skill']}
             size={32}
           />
         ))}
