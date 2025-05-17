@@ -1,7 +1,8 @@
+'use client';
 import React from 'react';
 import About from '../components/About';
 import Skills from '../components/Skills';
-// import Projects from '../components/Projects';
+import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 
 const HomePage = () => {
@@ -14,9 +15,9 @@ const HomePage = () => {
         <section id="skills">
           <Skills />
         </section>
-        {/* <section id="projects">
+        <section id="projects">
           <Projects />
-        </section> */}
+        </section>
         <section id="contact">
           <Contact />
         </section>
