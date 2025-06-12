@@ -45,6 +45,7 @@ const About: React.FC = () => {
             width={500}
             height={500}
             className="mx-auto rounded-lg shadow-lg mt-6 center mb-6"
+            unoptimized
           />
         </div>
       </div>
