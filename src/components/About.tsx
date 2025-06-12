@@ -4,7 +4,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="max-w-7xl mx-auto px-4 py-10">
       <h1 className="text-4xl font-bold text-center mb-6">About Me</h1>
-      <div className="text-center mb-4">
+      <div className="text-left mb-4">
         <p>
           I'm a senior frontend developer with over 10 years of experience
           crafting high-performance web applications using React, Next.js, and
@@ -29,7 +29,7 @@ const About: React.FC = () => {
         </p>
         <p>
           Outside of work, I enjoy traveling with my family, running, building
-          drones, and working toward my private pilot license—channeling my
+          drones, and working toward my private pilot license - channeling my
           curiosity and drive into the skies.
         </p>
         <div className="flex justify-center">
