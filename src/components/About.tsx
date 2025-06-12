@@ -29,7 +29,7 @@ const About: React.FC = () => {
         </p>
         <p>
           Outside of work, I enjoy traveling with my family, running, building
-          drones, and working toward my private pilot license—channeling my
+          drones, and working toward my private pilot license - channeling my
           curiosity and drive into the skies.
         </p>
         <div className="flex justify-center">
