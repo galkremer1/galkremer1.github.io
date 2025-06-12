@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === '/galkremer1.github.io' ? '' : '',
+  basePath: process.env.NODE_ENV === 'production' ? 'galkremer1.github.io' : '',
 };
 
 module.exports = nextConfig;
