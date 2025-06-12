@@ -40,7 +40,7 @@ const About: React.FC = () => {
         </p>
         <div className="flex justify-center">
           <Image
-            src={'/images/Gal_Flying.jpg'}
+            src={'/images/gal-flying.jpg'}
             alt="Me flying an airplane"
             width={500}
             height={500}
