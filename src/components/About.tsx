@@ -6,25 +6,16 @@ const About: React.FC = () => {
       <h1 className="text-4xl font-bold text-center mb-6">About Me</h1>
       <div className="text-center mb-4">
         <p>
-          I am a senior frontend developer with a passion for creating dynamic
-          and responsive web applications. With a strong background in
-          JavaScript, React, and Next.js, I strive to deliver high-quality user
-          experiences.
+          I am a senior frontend developer with a passion for creating dynamic and responsive web applications. With a strong background in JavaScript, React, and Next.js, I strive to deliver high-quality user experiences.
         </p>
         <p>
-          My journey in web development began nine years ago, and since then, I
-          have worked on diverse projects that have sharpened my skills in
-          frontend technologies. I thrive on collaborating with teams to bring
-          ideas to life and staying current with industry trends and best
-          practices. Recently, as Lead Software Engineer at JP Morgan, I
-          embraced management and mentored junior and mid-level developers,
-          finding great reward in fostering their growth.
+          My journey in web development began in 1997 when I built a website about the NASA Pathfinder landing. By 1999, I had landed my first paid project building a site for a local business. Around the same time, I also managed a small online music platform that featured artist profiles and downloadable MP3s—a formative experience in building and maintaining content-rich websites. I studied computer science in high school, learning Pascal and C++, before pursuing a BA in Economics & Business Management and later an MBA. About ten years ago, I returned to my roots in web development and began my professional career, combining technical expertise with business insight.
         </p>
         <p>
-          In my spare time, I love traveling with my family, running, and
-          building drones. I'm also pursuing a private pilot license, channeling
-          my passion for flying into a new adventure that fuels my curiosity and
-          drive.
+          Since then, I have worked on diverse projects that have sharpened my frontend expertise. Most recently, as Lead Software Engineer at JP Morgan, I led a team of developers, mentored junior and mid-level engineers, and helped deliver performant, user-friendly interfaces that enhanced productivity and user satisfaction.
+        </p>
+        <p>
+          In my spare time, I love traveling with my family, running, and building drones. I'm also pursuing a private pilot license, channeling my passion for flying into a new adventure that fuels my curiosity and drive.
         </p>
       </div>
     </section>
